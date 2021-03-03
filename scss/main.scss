@@ -1,0 +1,136 @@
+//Definicion colores
+$primary: lightgreen;
+$secondary: lightgrey;
+$color-letras: white;
+$body-color:rgb(36, 35, 35);
+$bg-nav: rgb(48, 48, 150);
+
+
+//Cambio de fuentes
+$font-family-sans-serif: 'DotGothic16', sans-serif;;
+$font-cabeceras:'Oswald', sans-serif;
+$headings-font-family:$font-cabeceras;
+
+ //Color letras navbar
+ $navbar-dark-background:            $bg-nav;
+ $navbar-dark-color:                 rgba($color-letras, .55);
+ $navbar-dark-hover-color:           rgba($color-letras, .75);
+ $navbar-dark-active-color:           $color-letras;
+ $navbar-dark-disabled-color:        rgba($color-letras, .25);
+ $navbar-dark-toggler-border-color:  rgba($color-letras, .1);
+
+//Navbar editada
+.navbar{
+    background-color: $navbar-dark-background;
+}
+.nav-link{
+     color: $navbar-dark-color;
+
+     &:hover{
+        background-color: $primary;
+    }
+    &:focus{
+        background-color: $primary;
+    }
+    &:disabled{
+        color: $navbar-dark-disabled-color;
+    }
+ }
+
+
+
+//Modificacion cards
+$border-color:                white;
+$border-width:                  .5rem;
+$card-bg: $primary;
+
+$border-radius:               .25rem;
+$border-radius-sm:            .3rem;
+$border-radius-lg:             .5rem;
+
+$card-cap-bg:                       rgba(rgb(0, 0, 0),5 ) ;
+$card-spacer-x:                     1rem;
+
+
+.text-uppercase{
+    color: $color-letras
+}
+.carta{
+    padding-bottom: 30px;
+}
+.card{
+    &-deck{
+        color: $body-color;
+    }
+
+    border: 0.2rem solid rgba($primary, 0.2);
+    font-size: 1.2rem;
+    &-img{
+        color: rgba($color: #00ff0dfb, $alpha: 2.0);
+    }
+
+    button:focus{
+        background-color: rgba($primary, 0.8);
+    }
+
+}
+
+
+
+//Modificacion del modal
+$modal-content-color:              color(primary);
+$modal-content-bg:                  $color-letras;
+$modal-content-border-width:        .15rem;
+$modal-content-border-radius:        $border-radius;
+
+.modal{
+    border-radius: $modal-content-border-radius;
+    color: black;
+
+    &-header{
+        background-color: $secondary;
+    }
+    &-body{ 
+        background-color: white;
+    }
+
+    &-footer{
+        background-color: $secondary;
+        button{
+            background-color: $primary;
+            border: none;
+            &:hover{
+                background-color: rgba($primary, 0.5);
+            }
+        }
+    }
+
+}
+
+//Modificacion jumbotron
+.jumbotron{
+    background-color: $body-color;
+    color: $color-letras;
+}
+
+
+//Editar Input
+$input-border-color: $primary;
+$input-border-width: 0.2rem;
+$input-color: $bg-nav;
+
+//Editar formulario
+$form-label-color-border:              lighten($primary,50%);
+$form-label-margin-top:                .5rem ;
+$form-label-border-width:               0.5rem;
+
+.formulario{
+    background-color: $bg-nav;
+    color: $color-letras;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    background-color: $body-color;
+}
